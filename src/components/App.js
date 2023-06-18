@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <h1>Select your gender:</h1>
+        <h2>Select your gender:</h2>
         <input type="radio" name="gender" id="male" onClick={()=>{
           setGender("Male");
           setShirt("shirt");
@@ -22,7 +22,7 @@ const App = () => {
           setSize(["2","4","6"])
         }}/>
         <label htmlFor="female">Female</label>
-        <h1>Select your {shirt} size:</h1>
+        <h2>Select your {shirt} size:</h2>
         <select name="" id="">
         <option value="">Select size</option>
           <option value="">{size[0]}</option>
