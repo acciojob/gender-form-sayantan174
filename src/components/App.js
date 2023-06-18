@@ -5,7 +5,7 @@ import './../styles/App.css';
 const App = () => {
   const [gender,setGender]=useState("Male");
   const [shirt,setShirt]=useState("shirt");
-  const [size,setSize]=useState(["small","medium","large"])
+  const [size,setSize]=useState(["Small","Medium","Large"])
   return (
     <div>
         {/* Do not remove the main div */}
@@ -13,7 +13,7 @@ const App = () => {
         <input type="radio" name="gender" id="male" onClick={()=>{
           setGender("Male");
           setShirt("shirt");
-          setSize(["small","medium","large"]);
+          setSize(["Small","Medium","Large"]);
         }}/>
         <label htmlFor="male">Male</label>
         <input type="radio" name="gender" id="female" onClick={()=>{
